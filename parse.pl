@@ -1,4 +1,4 @@
-#!/usr/bin/perl -w
+#!/usr/bin/perl/5.18 -w
 
 use strict;
 use Spreadsheet::XSLX;
@@ -7,7 +7,7 @@ use Spreadsheet::XSLX;
 print "Please provide the source file location: ";
 
 my $excel = <STDIN>;
-chomp $inputfile;
+chomp $excel;
 
 # Import .xlsx
 
