@@ -6,29 +6,30 @@
 	my $input = <STDIN>;
 	chomp $input;
 	
-#	print "Which row contains your primary key?: ";
-#	my $primary_key = <STDIN>;
-#	chomp $primary_key;
-	
-	if (open(SOURCE, $input)){
-		print "File loaded successfully. \n";
-	}
-	else {print "Cannot open the file! \n"};
-	
-	@data = <SOURCE>;
-	
-	close SOURCE;
-	
-	print @data[0];
+	print "Which row contains your primary key?: ";
+	my $primary_key = <STDIN>;
+	chomp $primary_key;
 
-#   $obj = Text::CSV::Hashify->new( {
-#        file        => $input,
-#        format      => 'hoh', # hash of hashes, which is default
-#        key         => $primary_key,  # needed except when format is 'aoh'
-#   	} );
-#	print %obj;
-#	
-#	while ( ($key, $value) = each %hash_ref)
-#	{
-#	  print "key: $key, value: $hash{$key}\n";
-#	}
+   $obj = Text::CSV::Hashify->new( {
+        file        => $input,
+        format      => 'hoh', 
+        key         => $primary_key,  
+   	} );
+	$hash_ref = $obj->all;
+	%data = %$hash_ref;
+	print %data;
+	%data2 = %{%data};
+	print "data 2: ";
+	
+	while ( ($key, $value) = each %data)
+		{
+			$value = %value;
+			
+			while ( ($key, $value) = each %data)
+				{
+				  print "key: $key, value: $hash{$key}\n";
+				}
+		}
+
+
+	
