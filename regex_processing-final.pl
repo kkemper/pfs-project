@@ -18,10 +18,26 @@ my @data = <SOURCE>;
 	
 close SOURCE;
 
+#remove header-row
+shift @data;
+
+#remove empty rows
+my @blank;
+my @non_blank;
+
+foreach my $record (@data){
+	if ($record =~ m/^\s/){
+		push @blank, $record;
+	}else{
+		push @non_blank, $record;
+	}
+}
+
+#remove unknowns
 my @unknown;
 my @no_unknowns;
 my @annotations;
-foreach my $record (@data) {
+foreach my $record (@non_blank) {
 	if ($record =~ m/\,\,/s ){
 		$record =~ s/\,\,/\,unknown\,/gism;
 		push @unknown, $record;
@@ -127,6 +143,9 @@ foreach my $item (@current_smokers){
 		my $annotation = "$item,4\n";
 		push @annotations, $annotation;
 }
+
+#add header row
+unshift @annotations, "report_id, comments, reviewer_a, reviewer_b, processed \n";
 
 my $output = "processed_data.csv";
 if (open(PROCESSED, ">$output")){

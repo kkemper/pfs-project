@@ -13,16 +13,8 @@ report_id,smoking_history,reviewer_a,reviewer_b
 12,,6,6
 13,,6,6
 14,occasionally,2,2
-15,"Smoked for 15 years. Quit in April 2009. Smoked a pack per day.
-
-
-
-No alcohol.",5,5
-16,"smokes two and a half packs a day
-
-used chewing tobacco
-
-no alcohol",3,3
+15,"Smoked for 15 years. Quit in April 2009. Smoked a pack per day. No alcohol.",5,5
+16,"smokes two and a half packs a day used chewing tobacco no alcohol",3,3
 17,drinks beer occasionally,6,6
 18,pt denies alcohol and tobacco use,0,0
 19,,6,6
@@ -36,24 +28,10 @@ no alcohol",3,3
 27,,6,6
 28,,6,6
 29,,6,6
-30,"yes 1 pack in 3days
-
-
-
-alcohol-no",1,1
-31,"Smokes cigarettes: 22 pack year hx
-
-Alcohol: socially",1,1
+30,"yes 1 pack in 3days alcohol-no",1,1
+31,"Smokes cigarettes: 22 pack year hxAlcohol: socially",1,1
 32,,6,6
-33,"Yes
-
-About 1 cigarette a day
-
-Use to smoke about a pack a day
-
-
-
-Social drinker",1,1
+33,"Yes About 1 cigarette a day Use to smoke about a pack a day Social drinker",1,1
 34,,6,6
 35,,6,6
 36,,6,6
@@ -64,102 +42,62 @@ Social drinker",1,1
 41,,6,6
 42,,6,6
 43,,6,5
-44,"smokes 1/2 pack/day, denies alcohol use",1,1
+44,smokes 1/2 pack/day denies alcohol use,1,1
 45,Patient denies use of tobacco and alcohol,0,4
 46,no,0,0
-47,"Smokes 1 pack/3-4 days.  2 pack year history.
-
-Drinks socially.",1,1
-48,"1-2 cigarettes /day
-
-drinks socially 1-2 x/week",1,1
+47,"Smokes 1 pack/3-4 days.  2 pack year history. Drinks socially.",1,1
+48,"1-2 cigarettes /day drinks socially 1-2 x/week",1,1
 49,None,0,0
 50,,6,6
-51,"no tobacco, about 5 drinks a month",0,0
+51,no tobacco about 5 drinks a month,0,0
 52,,6,6
-53,"yes-1 1/2 per day
-
-yes-weekend drinker",3,3
+53,"yes-1 1/2 per day yes-weekend drinker",3,3
 54,no,0,0
-55,"tobacco: 1 pack per one and half weeks
-
-alcohol: 2 beers a month",1,1
+55,"tobacco: 1 pack per one and half weeks alcohol: 2 beers a month",1,1
 56,,6,0
-57,"tobacco: 1 cigarette a week
-
-alcohol: 1 beer a month",1,1
+57,"tobacco: 1 cigarette a week alcohol: 1 beer a month",1,1
 58,,6,6
 59,,6,6
 60,,6,6
 61,,6,6
 62,no,0,0
-63,"smoke half pack day, social drinker",1,1
-64,"smoke half pack day pt reports smoking since he was 15, social drinker",1,1
-65,"smoke half pack day pt reports smoking since he was 15, social drinker",1,1
-66,"smoke half pack day pt reports smoking since he was 15, social drinker",1,1
-67,"smoke half pack day pt reports smoking since he was 15, social drinker",1,1
-68,"smoke half pack day pt reports smoking since he was 15, social drinker",1,1
-69,"smoke half pack day pt reports smoking since he was 15, social drinker",1,1
-70,"(+) smokes approximately 1 pack per day; Patient states that she quit 3 days ago
-
-
-
-(-) EtOH-- approximately 3 beers a day; patient states that she has quit drinking alcohol as well",3,1
-71,"50 pack/yr smoker, says she quit a week ago
-
-
-
-EtOH-- approximately 3 beers a week",3,1
-72,"50 pack/yr smoker, says she quit 6 weeks ago
-
-
-
-EtOH-- approximately 3 beers a week",3,1
-73,"50 pack/yr smoker, says she quit in February of 2013.  Has not started smoking again!
-
-
-
-EtOH-- approximately 3 beers a week",3,5
-74,"50 pack/yr smoker, says she quit in February of 2013.  Has not started smoking again!
-
-
-
-EtOH-- approximately 3 beers a week",3,5
-75,"1 pk daiily, no to alchol",3,1
+63,smoke half pack day social drinker,1,1
+64,smoke half pack day pt reports smoking since he was 15 social drinker,1,1
+65,smoke half pack day pt reports smoking since he was 15 social drinker,1,1
+66,smoke half pack day pt reports smoking since he was 15 social drinker,1,1
+67,smoke half pack day pt reports smoking since he was 15 social drinker,1,1
+68,smoke half pack day pt reports smoking since he was 15 social drinker,1,1
+69,smoke half pack day pt reports smoking since he was 15 social drinker,1,1
+70,"(+) smokes approximately 1 pack per day; Patient states that she quit 3 days ago (-) EtOH-- approximately 3 beers a day; patient states that she has quit drinking alcohol as well",3,1
+71,"50 pack/yr smoker says she quit a week ago EtOH-- approximately 3 beers a week",3,1
+72,"50 pack/yr smoker says she quit 6 weeks ago EtOH-- approximately 3 beers a week",3,1
+73,"50 pack/yr smoker says she quit in February of 2013.  Has not started smoking again! EtOH-- approximately 3 beers a week",3,5
+74,"50 pack/yr smoker says she quit in February of 2013.  Has not started smoking again EtOH-- approximately 3 beers a week",3,5
+75,1 pk daiily no to alchol,3,1
 76,1 pak a day,3,1
-77,"rarely uses alcohol (less than once a month), smokes 1-2 cig/ day",1,1
-78,"Smokes 2 black and milds per day
-
-Drink very rarely",1,1
+77,rarely uses alcohol (less than once a month) smokes 1-2 cig/ day,1,1
+78,"Smokes 2 black and milds per day Drink very rarely",1,1
 79,,6,6
-80,"Yes, about a pack a day for 25 years, social drinker",1,1
+80,Yes about a pack a day for 25 years social drinker,1,1
 81,,6,6
 82,,6,6
-83,"Tobacco use: 1/2 pack/day
-
-Alcohol use--occasional",1,1
-84,"Tobacco use: 1/2 pack/day, since 2002",1,1
+83,"Tobacco use: 1/2 pack/day Alcohol use--occasional",1,1
+84,Tobacco use: 1/2 pack/day since 2002,1,1
 85,,6,6
 86,,6,6
-87,"Social drinker; 
-
-In the process of quitting - 1 pack a day for the last 20 years",1,1
+87,"Social drinker; In the process of quitting - 1 pack a day for the last 20 years",1,1
 88,,6,6
 89,,6,6
 90,,6,6
 91,,6,6
 92,,6,6
 93,Pt denies,0,0
-94,"No Tobacco in past 10 years
-
-EtOH - none in 10 years",5,5
+94,"No Tobacco in past 10 years EtOH - none in 10 years",5,5
 95,,6,6
 96,no,0,0
 97,n,0,0
 98,,6,6
-99,"Yes;  1/2 pack for 30 years-15 pack year history.
-
-Pt does not report using alcohol.",1,1
+99,"Yes;  1/2 pack for 30 years-15 pack year history. Pt does not report using alcohol.",1,1
 100,,6,6
 101,,6,6
 102,,6,6
@@ -172,9 +110,7 @@ Pt does not report using alcohol.",1,1
 109,,6,6
 110,,6,6
 111,No,0,0
-112,"No tobacco 
-
-Alcohol 2-3 times a month",0,0
+112,"No tobacco  Alcohol 2-3 times a month",0,0
 113,,6,6
 114,,6,6
 115,,6,6
@@ -186,12 +122,10 @@ Alcohol 2-3 times a month",0,0
 121,,6,6
 122,,6,6
 123,none.,6,0
-124,"smoke about a pack a day for about 30 years, at least a six pack a day of beer",1,1
+124,smoke about a pack a day for about 30 years at least a six pack a day of beer,1,1
 125,,6,1
-126,"Smokes Cigarettes, 46 years 1PPD habit
-
-Drinks Socially",3,4
-127,SMOKES,Current Smoker,4
+126,"Smokes Cigarettes 46 years 1PPD habit Drinks Socially",3,4
+127,SMOKES,4,4
 128,Pt denies,0,0
 129,no/no,0,0
 130,,6,6
@@ -200,9 +134,7 @@ Drinks Socially",3,4
 133,no/no,0,0
 134,,6,6
 135,,6,6
-136,"occaisional beer
-
-non smoker",0,0
+136,"occaisional beer non smoker",0,0
 137,,6,6
 138,,6,6
 139,,6,6
@@ -211,24 +143,14 @@ non smoker",0,0
 142,social drinking,6,6
 143,NO,0,0
 144,half pack/day,1,1
-145,"no to tobacco, occasional alcohol use",0,0
+145,no to tobacco occasional alcohol use,0,0
 146,No,0,0
 147,,6,6
 148,,6,6
 149,,6,6
-150,"pt denies smoking 
-
-rare social drinker",0,0
-151,"Smoke 5 cigs/day 15-20 pack year hx of smoking
-
-Not since 2010",1,1
-152,"Smoke 5 cigs/day 15-20 pack year hx of smoking
-
-Not since 2010
-
-
-
-Pt reports that she smokes and that she is using smoking.",1,1
+150,"pt denies smoking rare social drinker",0,0
+151,"Smoke 5 cigs/day 15-20 pack year hx of smoking Not since 2010",1,1
+152,"Smoke 5 cigs/day 15-20 pack year hx of smoking Not since 2010; Pt reports that she smokes and that she is using smoking.",1,1
 153,,6,6
 154,,6,6
 155,,6,6
@@ -248,7 +170,7 @@ Pt reports that she smokes and that she is using smoking.",1,1
 169,,6,6
 170,no (quit smoking in 2001 and quiting drinking in '90),5,5
 171,Drinks socially,6,6
-172,"alcohol - 3-4 drinks/month,  no tobacco hx",0,0
+172,alcohol - 3-4 drinks/month  no tobacco hx,0,0
 173,Occasional alcohol,6,6
 174,,6,6
 175,Occasional alcohol,6,6
@@ -257,17 +179,9 @@ Pt reports that she smokes and that she is using smoking.",1,1
 178,,6,6
 179,,6,6
 180,No,0,0
-181,"Tobacco: 0.5 year pack history, smokes 1 cigarette/day for 10  years
-
-Pt reports that she is currently seeking smoking cessation through her physician
-
-Alcohol: sober since Aug 2011",3,1
+181,"Tobacco: 0.5 year pack history smokes 1 cigarette/day for 10  years; Pt reports that she is currently seeking smoking cessation through her physician; Alcohol: sober since Aug 2011",3,1
 182,,6,6
-183,"Tobacco: 1 pack a week
-
-Pt reports that she is currently seeking smoking cessation through her physician
-
-stopped drinking alcohol",1,1
+183,"Tobacco: 1 pack a week; Pt reports that she is currently seeking smoking cessation through her physician stopped drinking alcohol",1,1
 184,tobacco a half of pack a day,1,1
 185,Pt denies use,0,0
 186,Smoke--about 6 cigarettes/day--for about 15 years,1,1
@@ -279,18 +193,16 @@ stopped drinking alcohol",1,1
 192,,6,6
 193,,6,6
 194,,6,6
-195,"smokes pack/day, denies alcohol use",3,1
+195,smokes pack/day denies alcohol use,3,1
 196,Pt reports 1/2 pack day,1,1
 197,,6,6
-198,"DOESN,T SMOKE, DRINKSOCCCASIONALLY",0,0
+198,DOESNT SMOKE DRINKSOCCCASIONALLY,0,0
 199,,6,6
 200,,6,6
 201,,6,6
 202,No,0,0
 203,,6,6
-204,"Pack and a half a day
-
-Alcohol socially",3,3
+204,"Pack and a half a day; Alcohol socially",3,3
 205,No.,0,0
 206,,6,6
 207,,6,6
@@ -301,13 +213,13 @@ Alcohol socially",3,3
 212,No.,0,0
 213,No.,0,0
 214,No.,0,0
-215,"Yes, half pack a day - started 30 years ago. Social drinking",1,1
+215,Yes half pack a day - started 30 years ago. Social drinking,1,1
 216,no,0,0
 217,,6,6
 218,smoke 1/2 ppd,1,1
 219,,6,6
 220,Social drinker,6,6
-221,"no smoke, occasional drinker",0,0
+221,no smoke occasional drinker,0,0
 222,No,0,0
 223,No,0,0
 224,No,0,0
@@ -317,12 +229,8 @@ Alcohol socially",3,3
 228,,6,6
 229,,6,6
 230,,6,6
-231,"6 pack during week
-
-drinks more on weekends
-
-Pt smokes 1/2 pack a day for 30 years",1,1
-232,"occassionally drinks, doesn,t smoke",0,0
+231,"6 pack during week; drinks more on weekends; Pt smokes 1/2 pack a day for 30 years",1,1
+232,occassionally drinks doesnt smoke,0,0
 233,NO,0,0
 234,smokes a pack a day,1,1
 235,,6,6
@@ -335,15 +243,13 @@ Pt smokes 1/2 pack a day for 30 years",1,1
 242,NO,0,0
 243,,6,6
 244,no,0,0
-245,"6 cigarettes/day for 20 yrs
-
-occassional EtOh",1,1
+245,"6 cigarettes/day for 20 yrs; occassional EtOh",1,1
 246,,6,6
 247,,6,6
 248,,6,6
 249,,6,6
 250,1 pack/day for 11 years; seldom drinks,3,1
-251,"no, not for 10 years",0,6
+251,no not for 10 years,0,6
 252,,6,6
 253,,6,6
 254,,6,6
