@@ -1,5 +1,5 @@
 #!/usr/bin/perl/5.18 -w
-use strict;
+
 
 #Get csv
 print "Please provide the source file location: ";
@@ -23,15 +23,18 @@ my @no_unknowns;
 my @annotations;
 foreach my $record (@data) {
 	if ($record =~ m/\,\,/s ){
+		$record =~ s/\,\,/\,unknown\,/gism;
 		push @unknown, $record;
 	}else{
 		push @no_unknowns, $record;
 	}
 }
+
 foreach my $item (@unknown){
-		chomp $item;
-		my $annotation = "$item,6 \n";
+		chomp($item);
+		my $annotation = join ",", $item, "6\n";
 		push @annotations, $annotation;
+		print $annotation;
 }
 
 #remove non-smokers
@@ -124,7 +127,6 @@ foreach my $item (@current_smokers){
 		my $annotation = "$item,4\n";
 		push @annotations, $annotation;
 }
-
 
 my $output = "processed_data.csv";
 if (open(PROCESSED, ">$output")){
