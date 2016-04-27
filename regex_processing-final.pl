@@ -18,31 +18,20 @@ my @data = <SOURCE>;
 	
 close SOURCE;
 
-#remove blank records
-my @blanks;
-my @no_blanks
-foreach my $record (@data) {
-	if ($record =~ m/^\,){
-		push @blanks, $record;
-	}else{
-		push @no_blanks, $record;
-	}
-}
-
-
-#remove unknowns
 my @unknown;
 my @no_unknowns;
-foreach my $record (@no_blanks) {
+my @annotations;
+foreach my $record (@data) {
 	if ($record =~ m/\,\,/s ){
 		push @unknown, $record;
 	}else{
 		push @no_unknowns, $record;
 	}
-	foreach my $item (@unknown){
-		my $annotation = "$item, 6";
-		print $annotation;
-	}
+}
+foreach my $item (@unknown){
+		chomp $item;
+		my $annotation = "$item,6 \n";
+		push @annotations, $annotation;
 }
 
 #remove non-smokers
@@ -56,17 +45,27 @@ foreach my $record (@no_unknowns) {
 		push @smokers, $record;
 	}
 }
+foreach my $item (@non_smokers){
+		chomp $item;
+		my $annotation = "$item,0\n";
+		push @annotations, $annotation;
+}
 
 #identify light smokers
 my @light_smokers;
 my @non_light_smokers;
 
 foreach my $record (@smokers) {
-	if ($record =~ m/pack . day/ism){
+	if ($record =~ m/. pack * day|week|year|month|1 pack . day/ism){
 		push @light_smokers, $record;
 	}else{
 		push @non_light_smokers, $record;
 	}
+}
+foreach my $item (@light_smokers){
+		chomp $item;
+		my $annotation = "$item,1\n";
+		push @annotations, $annotation;
 }
 
 #heavy smokers
@@ -80,19 +79,29 @@ foreach my $record (@non_light_smokers) {
 		push @non_heavy_smokers, $record;
 	}
 }
+foreach my $item (@heavy_smokers){
+		chomp $item;
+		my $annotation = "$item,3\n";
+		push @annotations, $annotation;
+}
 
 #intermittent smokers
 my @int_smokers;
 my @non_int_smokers;
 
 foreach my $record (@non_heavy_smokers) {
-	if ($record =~ m/(pack|cig)*(week|month)/ism){
+	if ($record =~ m/occaision*|social*/ism){
 		push @int_smokers, $record;
 	}else{
 		push @non_int_smokers, $record;
 	}
 }
 
+foreach my $item (@int_smokers){
+		chomp $item;
+		my $annotation = "$item,2\n";
+		push @annotations, $annotation;
+}
 
 #past smokers
 my @past_smokers;
@@ -105,13 +114,25 @@ foreach my $record (@non_int_smokers) {
 		push @current_smokers, $record;
 	}
 }
+foreach my $item (@past_smokers){
+		chomp $item;
+		my $annotation = "$item,5\n";
+		push @annotations, $annotation;
+}
+foreach my $item (@current_smokers){
+		chomp $item;
+		my $annotation = "$item,4\n";
+		push @annotations, $annotation;
+}
 
 
-#Annotate each array
-#my @annotated
-#my $annotation
-#
-#foreach my $record (@unknown){
-#	$annotation = '$record, 6';
-#	print $annotation;
-#}
+my $output = "processed_data.csv";
+if (open(PROCESSED, ">$output")){
+	print PROCESSED "$_\n" for @annotations;
+	print "File: processed_data.csv has been created \n";
+	close PROCESSED;
+}
+else {
+	print "Cannot open the output file \n";
+	exit;
+};
